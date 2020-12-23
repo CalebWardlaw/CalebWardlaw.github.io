@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+# Coffee Project
 
-You can use the [editor on GitHub](https://github.com/CalebWardlaw/CalebWardlaw.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Congratulations! You have landed your first development job! You have inherited
+a project from Fancy Coffee Company&copy;, and they want you to make
+improvements to it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup
 
-### Markdown
+1. Create a Github organization and add your teammate.
+1. Fork this repository (Click on the "Fork" button on the top right of this
+   page) and select the new organization as a destination.
+1. Clone the forked repository from your organization.
+1. Open up the HTML file and check out the existing application.
+1. Read through the code and understand the existing code structure before you start to build the features.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## TODO
 
-```markdown
-Syntax highlighted code block
+- Update the HTML
 
-# Header 1
-## Header 2
-### Header 3
+    Tables are a little old school, you need to refactor the code so that each
+    coffee is displayed in a `div` that contains a heading displaying the coffee
+    name, and the type of roast in a paragraph. Don't display the ids, these are
+    only for our application's internal use
 
-- Bulleted
-- List
+- When the page loads, the coffees should be sorted by their ids in ascending
+  order
 
-1. Numbered
-2. List
+- Add functionality to search through the coffees by name, and display only the
+  coffees that match the provided search term (You will need to add an input
+  field to the existing form for this)
 
-**Bold** and _Italic_ and `Code` text
+- Add functionality to update the displayed coffee as the user types into the
+  search box, or as soon as they select an option from the select.
 
-[Link](url) and ![Image](src)
-```
+**Bonus**
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Add an option to select all roasts for roast type
 
-### Jekyll Themes
+- Make your name search case insensitive
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CalebWardlaw/CalebWardlaw.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Allow the user to add new coffees to the page
 
-### Support or Contact
+    Create another form on the page that has an input for the coffee name, and
+    a select to choose the coffee roast. When the form is submitted, the new
+    coffee should appear on the page. (*Note that any new coffees you add will
+    be lost when you refresh the page, for an extra challenge, research
+    how `localStorage` works and see if you can find a way to persist the data*)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Style it!
+
+    The page looks pretty plain as it is, and the refactoring we did above to
+    use `div`s for coffees should give us more flexibility in styling. (*Hint:
+    the styling shown in the example below can be achieved purely with bootstrap
+    classes, that is, without custom CSS*)
+
+## Example
+
+Here is an example demonstrating the above functionality. Your application might
+look different, but should have the same features.
+
+![Cofee Project Demo](demo.gif)
