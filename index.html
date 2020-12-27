@@ -10,21 +10,42 @@
 </head>
 
 <style>
-    .card {
-        margin-top: .5em;
-        display: flex;
-        justify-content: space-evenly;
-        float: left;
-    }
+    /*.card {*/
+    /*    margin-top: .5em;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    float: left;*/
+    /*}*/
+
     .cards {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .card-holder {
+        display: flex;
+        justify-content: center;
     }
 
     .main-container {
         padding-left: .5em;
         padding-right: .5em;
     }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        color: white;
+        background: #B16C31;
+        border-color: #C28046;
+    }
+
+
+
 
 
     .flex-container {
@@ -42,6 +63,23 @@
         padding-left: 1em;
     }
 
+    .flex-container-2 {
+        color: white;
+        position: absolute;
+        top: 600px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        opacity: 50%;
+    }
+
+    .flex-item-2 {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
 
 </style>
 
@@ -54,51 +92,23 @@
             <video autoplay muted loop poster="https://dummyimage.com/900x400/000/fff">
                 <source src="img/pexels-free-creative-stuff-5561385.mp4" type="video/mp4">
             </video>
-<!--        <div class="title-style">-->
-<!--            <div class="row">-->
-<!--            <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--                <div class="container-fluid">-->
-<!--                    <a class="navbar-brand" href="#">Navbar</a>-->
-<!--                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                        <span class="navbar-toggler-icon"></span>-->
-<!--                    </button>-->
-<!--                    <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
-<!--                        <ul class="navbar-nav">-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link active" aria-current="page" href="#">Home</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="#">Features</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="#">Pricing</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item dropdown">-->
-<!--                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                                    Dropdown link-->
-<!--                                </a>-->
-<!--                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
-<!--                                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                                </ul>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </nav>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="flex-container">
+            <div class="flex-item"><h1>CALEB WARDLAW</h1></div>
+            <br>
+            <br>
+            <div class="flex-item"><h1>WEB DEVELOPER</h1></div>
+        </div>
+
+        <div class="flex-container-2">
+            <div class="flex-item-2"><h1>PROJECTS</h1></div>
+            <div class="flex-item-2"><h1>ABOUT</h1></div>
+            <div class="flex-item-2"><h1>CONTACT</h1></div>
+        </div>
+
     </div>
 <!--End Video-->
 
 
-<div class="flex-container">
-    <div class="flex-item"><h1>CALEB WARDLAW</h1></div>
-    <br>
-    <br>
-    <div class="flex-item"><h1>WEB DEVELOPER</h1></div>
-</div>
 
 
 
@@ -109,40 +119,41 @@
 
 <div class="row">
 <div class="cards">
+    <div class="card-holder col-md-3 col-lg-3 col-sm-12 col-xs-12">
         <div class="card" style="width: 18rem;">
             <img src="img/Weather.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><a href="https://calebwardlaw.github.io/Weather-app/" class="btn btn-primary">Weather App</a></h5>
+                <p class="card-text">Using JavaScript and OpenWeather API to generate forecast worldwide. Can search location or drag and drop pin for results.</p>
             </div>
         </div>
-
+    </div>
+    <div class="card-holder col-md-3 col-lg-3 col-sm-12 col-xs-12">
         <div class="card" style="width: 18rem;">
             <img src="img/Coffee.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://localhost:63342/coffee-project/index.html?_ijt=bql5i75t6dpvig2pppkivouuog" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><a href="http://localhost:63342/coffee-project/index.html?_ijt=bql5i75t6dpvig2pppkivouuog" class="btn btn-primary">Coffee Orders</a></h5>
+                <p class="card-text">Single page application for orders. Database updates per user input without refreshing the page.</p>
             </div>
         </div>
-
+        </div>
+        <div class="card-holder col-md-3 col-lg-3 col-sm-12 col-xs-12">
         <div class="card" style="width: 18rem;">
             <img src="img/Quality.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://www.qualitymindsets.com/careers" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><a href="https://www.qualitymindsets.com/careers" class="btn btn-primary">Quality Mindsets</a></h5>
+                <p class="card-text">Careers page for Quality Mindsets LLC (Indiana). Injected custom code under contract for Create Brightly Studios. </p>
             </div>
         </div>
-
+        </div>
+            <div class="card-holder col-md-3 col-lg-3 col-sm-12 col-xs-12">
         <div class="card" style="width: 18rem;">
             <img src="img/Design.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://calebwardlaw.github.io/Design-project/" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title"><a href="https://calebwardlaw.github.io/Design-project/" class="btn btn-primary">Wireframe Rendering</a></h5>
+                <p class="card-text">Created dynamic webpage per web designers wireframe with CSS and HTML.</p>
             </div>
+        </div>
         </div>
 </div>
 
