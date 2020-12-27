@@ -10,13 +10,8 @@
 </head>
 
 <style>
-    /*.card {*/
-    /*    margin-top: .5em;*/
-    /*    display: flex;*/
-    /*    justify-content: space-between;*/
-    /*    float: left;*/
-    /*}*/
 
+/*<!--    add media queries-->*/
     .cards {
         display: flex;
         justify-content: space-between;
@@ -29,21 +24,23 @@
     }
 
     .main-container {
-        padding-left: .5em;
-        padding-right: .5em;
+        padding: .5em;
     }
 
-    .btn {
-        display: flex;
-        justify-content: center;
-    }
 
     .btn {
         color: white;
         background: #B16C31;
         border-color: #C28046;
+        display: flex;
+        justify-content: center;
     }
 
+    .video-container {
+        height: 400px;
+        width: auto;
+        overflow: hidden;
+    }
 
 
 
@@ -63,23 +60,10 @@
         padding-left: 1em;
     }
 
-    .flex-container-2 {
-        color: white;
-        position: absolute;
-        top: 600px;
-        left: 0;
+    .nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        opacity: 50%;
+        justify-content: center;
     }
-
-    .flex-item-2 {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
 
 </style>
 
@@ -89,9 +73,11 @@
 <div class="main-container">
 <!--Video-->
     <div class="row">
+        <div class="video-container">
             <video autoplay muted loop poster="https://dummyimage.com/900x400/000/fff">
                 <source src="img/pexels-free-creative-stuff-5561385.mp4" type="video/mp4">
             </video>
+        </div>
         <div class="flex-container">
             <div class="flex-item"><h1>CALEB WARDLAW</h1></div>
             <br>
@@ -99,18 +85,14 @@
             <div class="flex-item"><h1>WEB DEVELOPER</h1></div>
         </div>
 
-        <div class="flex-container-2">
-            <div class="flex-item-2"><h1>PROJECTS</h1></div>
-            <div class="flex-item-2"><h1>ABOUT</h1></div>
-            <div class="flex-item-2"><h1>CONTACT</h1></div>
-        </div>
+
 
     </div>
 <!--End Video-->
 
 
 
-
+<h1 class="nav">PROJECTS</h1>
 
 
 
@@ -157,6 +139,11 @@
         </div>
 </div>
 
+<h1 class="nav">ABOUT</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam, cum, cupiditate eligendi eos explicabo maxime neque nobis officiis, quae quas quisquam sint vitae voluptates? Architecto dolores quis saepe.</span><span>A commodi consequatur dignissimos dolorem dolorum ducimus ea, eius id ipsam iure, iusto minus perferendis perspiciatis quibusdam quo quos repudiandae saepe, sapiente sunt voluptatibus? Aspernatur cumque doloribus fugiat modi quasi!</span><span>Amet animi aperiam asperiores at aut deserunt dignissimos doloremque ea eaque facere incidunt iusto laudantium libero magni modi nihil nisi nulla odit perferendis provident quae rem repellendus repudiandae, ut vitae.</span></p>
+
+<h1 class="nav">CONTACT</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ea nam nihil sed? Beatae consequuntur est eveniet excepturi iure necessitatibus non nostrum, placeat quae quisquam quos sapiente tempora tempore vitae.</span><span>Asperiores beatae, delectus expedita labore neque nesciunt possimus quis sequi tenetur veniam! Iusto laboriosam minima perferendis quo reprehenderit, repudiandae ullam voluptatibus! Architecto corporis dolore itaque perferendis quis tenetur totam voluptatibus?</span><span>A alias at, consectetur deleniti deserunt dolorem eaque earum explicabo in ipsam modi officia repellendus voluptate! Ab aperiam beatae, culpa dolores doloribus excepturi hic illum maiores numquam odit sequi suscipit?</span></p>
 
 <!--    </div>-->
 
