@@ -12,6 +12,13 @@
 <style>
 
 /*<!--    add media queries-->*/
+
+
+
+
+    body {
+        background: #A0958B;
+    }
     .cards {
         display: flex;
         justify-content: space-between;
@@ -23,8 +30,11 @@
         justify-content: center;
     }
 
+    .card-body{
+        background-color: black;
+    }
+
     .main-container {
-        padding: .5em;
     }
 
 
@@ -42,13 +52,10 @@
         overflow: hidden;
     }
 
-
-
-
-    .flex-container {
+    .banner {
         color: white;
         position: absolute;
-        top: 30px;
+        top: auto;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -60,11 +67,61 @@
         padding-left: 1em;
     }
 
+    .header {
+        font-size: 140px;
+    }
+
+    .header-small{
+        font-size: 70px;
+    }
     .nav {
+        margin-top: 1em;
+        margin-bottom: 1em;
         display: flex;
         justify-content: center;
     }
 
+    .info {
+        justify-content: center;
+        text-align: left;
+        margin-right: 75px;
+        margin-left: 50px;
+    }
+
+@media screen and (min-width:0px) and (max-width:425px) {
+    .header-small{
+        font-size: 35px;
+    }
+
+    .header{
+        font-size:60px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-holder {
+        padding-top: .5em;
+    }
+
+    .info {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px){
+    .header{
+        font-size: 100px;
+    }
+
+    .header-small {
+        font-size: 55px;
+    }
+}
 </style>
 
 
@@ -78,11 +135,11 @@
                 <source src="img/pexels-free-creative-stuff-5561385.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="flex-container">
-            <div class="flex-item"><h1>CALEB WARDLAW</h1></div>
+        <div class="banner">
+            <div class="flex-item-name"><h1 class="header">CALEB WARDLAW</h1></div>
             <br>
             <br>
-            <div class="flex-item"><h1>WEB DEVELOPER</h1></div>
+            <div class="flex-item-title"><h1 class="header-small">Web Developer</h1></div>
         </div>
 
 
@@ -140,10 +197,12 @@
 </div>
 
 <h1 class="nav">ABOUT</h1>
-<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam, cum, cupiditate eligendi eos explicabo maxime neque nobis officiis, quae quas quisquam sint vitae voluptates? Architecto dolores quis saepe.</span><span>A commodi consequatur dignissimos dolorem dolorum ducimus ea, eius id ipsam iure, iusto minus perferendis perspiciatis quibusdam quo quos repudiandae saepe, sapiente sunt voluptatibus? Aspernatur cumque doloribus fugiat modi quasi!</span><span>Amet animi aperiam asperiores at aut deserunt dignissimos doloremque ea eaque facere incidunt iusto laudantium libero magni modi nihil nisi nulla odit perferendis provident quae rem repellendus repudiandae, ut vitae.</span></p>
+
+<p class="info"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam, cum, cupiditate eligendi eos explicabo maxime neque nobis officiis, quae quas quisquam sint vitae voluptates? Architecto dolores quis saepe.</span><span>A commodi consequatur dignissimos dolorem dolorum ducimus ea, eius id ipsam iure, iusto minus perferendis perspiciatis quibusdam quo quos repudiandae saepe, sapiente sunt voluptatibus? Aspernatur cumque doloribus fugiat modi quasi!</span><span>Amet animi aperiam asperiores at aut deserunt dignissimos doloremque ea eaque facere incidunt iusto laudantium libero magni modi nihil nisi nulla odit perferendis provident quae rem repellendus repudiandae, ut vitae.</span></p>
+
 
 <h1 class="nav">CONTACT</h1>
-<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ea nam nihil sed? Beatae consequuntur est eveniet excepturi iure necessitatibus non nostrum, placeat quae quisquam quos sapiente tempora tempore vitae.</span><span>Asperiores beatae, delectus expedita labore neque nesciunt possimus quis sequi tenetur veniam! Iusto laboriosam minima perferendis quo reprehenderit, repudiandae ullam voluptatibus! Architecto corporis dolore itaque perferendis quis tenetur totam voluptatibus?</span><span>A alias at, consectetur deleniti deserunt dolorem eaque earum explicabo in ipsam modi officia repellendus voluptate! Ab aperiam beatae, culpa dolores doloribus excepturi hic illum maiores numquam odit sequi suscipit?</span></p>
+<p class="info"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ea nam nihil sed? Beatae consequuntur est eveniet excepturi iure necessitatibus non nostrum, placeat quae quisquam quos sapiente tempora tempore vitae.</span><span>Asperiores beatae, delectus expedita labore neque nesciunt possimus quis sequi tenetur veniam! Iusto laboriosam minima perferendis quo reprehenderit, repudiandae ullam voluptatibus! Architecto corporis dolore itaque perferendis quis tenetur totam voluptatibus?</span><span>A alias at, consectetur deleniti deserunt dolorem eaque earum explicabo in ipsam modi officia repellendus voluptate! Ab aperiam beatae, culpa dolores doloribus excepturi hic illum maiores numquam odit sequi suscipit?</span></p>
 
 <!--    </div>-->
 
